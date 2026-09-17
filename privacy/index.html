@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy policy for Personal Restic Backup.">
+  <title>Privacy Policy | Personal Restic Backup</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <main>
+    <p class="eyebrow">Personal Restic Backup</p>
+    <h1>Privacy policy</h1>
+    <p class="updated">Last updated: 18 September 2026</p>
+
+    <section>
+      <h2>Purpose and scope</h2>
+      <p>
+        Personal Restic Backup is a single-user desktop configuration. It creates encrypted backup
+        repositories in the owner's own Google Drive account. It is not offered as a service to
+        other users.
+      </p>
+    </section>
+
+    <section>
+      <h2>Google data accessed</h2>
+      <p>
+        The client requests the Google Drive <code>drive.file</code> scope. This permits access to
+        files created by, or explicitly opened with, the client. The configured backup accesses only
+        the encrypted repository objects it creates. It does not request general access to unrelated
+        files in the owner's Drive.
+      </p>
+    </section>
+
+    <section>
+      <h2>How data is used and stored</h2>
+      <ul>
+        <li>Selected source data is encrypted locally by restic before it is uploaded.</li>
+        <li>Encrypted repository objects are stored in the owner's Google Drive account.</li>
+        <li>The Google OAuth token is stored locally on the owner's Mac and is not transmitted to a developer server.</li>
+        <li>Data is used only to create, verify, maintain, and restore the owner's backups.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Sharing and disclosure</h2>
+      <p>
+        No Google user data or backup content is sold, shared for advertising, or disclosed to third
+        parties. Google Drive acts solely as the storage destination chosen by the owner. The site
+        uses no analytics or tracking code.
+      </p>
+    </section>
+
+    <section>
+      <h2>Retention and deletion</h2>
+      <p>
+        Encrypted backups remain in the owner's Google Drive until the owner deletes them. The
+        current backup configuration does not automatically prune repository data. Revoking OAuth
+        access stops future access but does not itself delete existing backup objects.
+      </p>
+    </section>
+
+    <section>
+      <h2>Security</h2>
+      <p>
+        Restic encrypts backup content and metadata before upload. Local OAuth and repository
+        credentials are protected on the owner's Mac. No internet-facing backup server is operated.
+      </p>
+    </section>
+
+    <section>
+      <h2>Google API Services policy</h2>
+      <p>
+        Use of information received from Google APIs adheres to the
+        <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>,
+        including its Limited Use requirements.
+      </p>
+    </section>
+
+    <section>
+      <h2>Control and contact</h2>
+      <p>
+        The owner can revoke access at any time through
+        <a href="https://myaccount.google.com/connections">Google Account connections</a>.
+        Questions may be directed through the
+        <a href="https://github.com/hryhory-sinenka">GitHub account hosting this policy</a>.
+      </p>
+    </section>
+
+    <nav aria-label="Site navigation">
+      <a href="../">Home</a>
+      <a href="../terms/">Terms of use</a>
+    </nav>
+  </main>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Information about the Personal Restic Backup OAuth client.">
+  <title>Personal Restic Backup</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <p class="eyebrow">Single-user backup utility</p>
+    <h1>Personal Restic Backup</h1>
+
+    <p>
+      Personal Restic Backup is a private desktop backup configuration used by its owner to store
+      encrypted, versioned backups in the owner's Google Drive account. It uses
+      <a href="https://restic.net/">restic</a> for local encryption and snapshots and
+      <a href="https://rclone.org/">rclone</a> for transport to Google Drive.
+    </p>
+
+    <p>
+      This is not a commercial service or a public application. It has no hosted application
+      server, advertising, analytics, or public user registration.
+    </p>
+
+    <section>
+      <h2>Google Drive access</h2>
+      <p>
+        The desktop client requests the narrow <code>drive.file</code> permission. Its configured
+        use is limited to creating, listing, reading, verifying, restoring, and maintaining the
+        encrypted backup objects that it creates in the owner's Drive. It does not inspect unrelated
+        Drive files.
+      </p>
+    </section>
+
+    <section>
+      <h2>Data handling</h2>
+      <p>
+        Backup data and filenames are encrypted on the owner's Mac before upload. No backup content,
+        Google account data, or usage information is sent to the developer or sold or shared with
+        third parties.
+      </p>
+    </section>
+
+    <nav aria-label="Legal and support information">
+      <a href="privacy/">Privacy policy</a>
+      <a href="terms/">Terms of use</a>
+      <a href="https://myaccount.google.com/connections">Revoke Google access</a>
+    </nav>
+  </main>
+</body>
+</html>
