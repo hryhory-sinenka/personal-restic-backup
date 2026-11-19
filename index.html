@@ -9,12 +9,12 @@
 </head>
 <body>
   <main>
-    <p class="eyebrow">Single-user backup utility</p>
+    <p class="eyebrow">Private family backup utility</p>
     <h1>Personal Restic Backup</h1>
 
     <p>
-      Personal Restic Backup is a private desktop backup configuration used by its owner to store
-      encrypted, versioned backups in the owner's Google Drive account. It uses
+      Each family member signs in with their own Google account and stores encrypted, versioned
+      backups in their own Drive. Personal Restic Backup uses
       <a href="https://restic.net/">restic</a> for local encryption and snapshots and
       <a href="https://rclone.org/">rclone</a> for transport to Google Drive.
     </p>
@@ -29,7 +29,7 @@
       <p>
         The desktop client requests the narrow <code>drive.file</code> permission. Its configured
         use is limited to creating, listing, reading, verifying, restoring, and maintaining the
-        encrypted backup objects that it creates in the owner's Drive. It does not inspect unrelated
+        encrypted backup objects that it creates in that person's Drive. It does not inspect unrelated
         Drive files.
       </p>
     </section>
@@ -37,7 +37,7 @@
     <section>
       <h2>Data handling</h2>
       <p>
-        Backup data and filenames are encrypted on the owner's Mac before upload. No backup content,
+        Backup data and filenames are encrypted on each person's Mac before upload. No backup content,
         Google account data, or usage information is sent to the developer or sold or shared with
         third parties.
       </p>
